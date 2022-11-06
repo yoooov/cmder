@@ -19,11 +19,13 @@ prompt_homeSymbol = "~"
 
 -- REQUIRED. Symbol displayed in the new line below the prompt.
  -- default is 'λ'
+prompt_prefix_lambSymbol = "└──╼"
+-- prompt_lambSymbol = "└──╼ $"
 prompt_lambSymbol = "λ"
 
 -- REQUIRED. Adds [user]@[host] to the beginning of the prompt like bash
  -- default is false
-prompt_useUserAtHost = false
+prompt_useUserAtHost = true
 
 -- REQUIRED. If true prompt is a single line instead of default two line prompt.
  -- default is false
@@ -53,7 +55,8 @@ prompt_overrideSvnStatusOptIn = false
 -- Prompt Element Colors
 uah_color = "\x1b[1;33;49m" -- Green = uah = [user]@[hostname]
 cwd_color = "\x1b[1;32;49m" -- Yellow cwd = Current Working Directory
-lamb_color = "\x1b[1;30;49m" -- Light Grey = Lambda Color
+-- lamb_color = "\x1b[1;30;49m" -- Light Grey = Lambda Color
+lamb_color = "\x1b[1;33;49m"
 clean_color = "\x1b[1;37;49m"
 dirty_color = "\x1b[33;3m"
 conflict_color = "\x1b[31;1m"
